@@ -4,7 +4,7 @@ const user ={
     username:"ranjit",
     price:345,
     welcomeMessage:function(){
-        console.log(`${this.username},welcome to my website`)//this keyword is used in current context.
+        console.log(`${this.username},welcome to my website`)//this keyword refer current context.
         console.log(this)
     }
 
@@ -16,6 +16,17 @@ const user ={
 
 //Arrow function()
 let one =()=>{
-    const 
+    let userName="Harsh"
+    console.log(this.userName)
 
 }
+//one()
+
+const addtwo=(num1,num2)=>{//explicit return
+    return num1+num2;
+
+
+}
+console.log(addtwo(4,7))
+//const addtwo = (num1,num2)=> (4+8) //implicit return 
+//const addtwo=({Namee:"ayush"}) object return
