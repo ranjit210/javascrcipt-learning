@@ -1,0 +1,30 @@
+//multiple if else condition
+const balance =1000
+ //if(balance<500){
+   // console.log("less than")
+ //}
+ //else if(balance<750){
+    //console.log("less than 750")
+ //}
+ //else if(balance<900){
+   // console.log("less than 900")
+
+ //}
+ //else{
+   // console.log("less than 1200")
+ //}
+
+ const userLoginIn=true
+ const creditCard =true
+ const loggedInFromGoogle =false
+ const loggedInGmail =true
+
+ if(userLoginIn&&creditCard&& 2==2){
+    console.log("allow to buy course")
+ }
+ if(loggedInFromGoogle||loggedInGmail){
+    console.log("user logged in.")
+ }
+ else{
+    console.log("user not logged")
+ }
