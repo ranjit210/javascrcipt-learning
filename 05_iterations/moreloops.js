@@ -32,4 +32,16 @@ const books =[
     {title:'bookEight',genre:'romance',publish:1872,edition:2015},
 ]
 const userBooks =books.filter( (bk) => bk.genre==='friction')
-console.log(userBooks)
+//console.log(userBooks)
+
+// chaining using more than one map
+
+const num1=[1,2,3,4,5,6,7,8,9,10]
+
+//const newNums =num1.map( (itemss)=> itemss +10)
+
+const newNums =num1.map( (itemss) => itemss * 10)
+                   .map((itemss)=> itemss +2)
+                   .filter( (itemss )=> itemss>=50)
+console.log(newNums)
+
